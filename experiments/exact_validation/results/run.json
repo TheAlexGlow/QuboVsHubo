@@ -1,0 +1,36 @@
+{
+  "api_version": 1,
+  "code_sha": "dc450e1180dffe127246726d14611375d76ace11",
+  "elapsed_seconds": 0.947531042,
+  "input_sha256": {
+    "controls-v1.json": "d1ee0f972900ed082bc902cc5fbe0ae0e7832184730f4b1111ca74bc1bf585d2",
+    "instances.json": "ac9e156ee34ddcb5f2abf36b8f235cfadb0217a32897a37231a37b9f2e03b1fb"
+  },
+  "machine": "arm64",
+  "matplotlib": "3.9.4",
+  "mode": "full",
+  "numpy": "2.0.1",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.9.6",
+  "rows": {
+    "degree_checks": 96,
+    "fibers": 1856,
+    "gibbs": 108,
+    "mixed_points": 2048,
+    "probabilities": 852,
+    "products": 31,
+    "ranks": 520
+  },
+  "run_id": "exact-v1-full",
+  "seed_list": [
+    415,
+    416,
+    417
+  ],
+  "threads": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

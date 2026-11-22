@@ -1,0 +1,11 @@
+model,scheme,m,minimum,directional_max,directional_ratio,local_max,local_ratio,global_max,global_ratio
+f1,shared,4,-5,9,9.0,21,21.0,33,33.0
+f1,separate,4,-5,9,9.0,21,21.0,33,33.0
+f2,shared,3,-4,11,11.0,18,18.0,36,36.0
+f2,separate,3,-4,11,11.0,18,18.0,36,36.0
+f3,shared,8,-4,9,9.0,9,9.0,21,21.0
+f3,separate,10,-4,7,7.0,9,9.0,21,21.0
+f4,shared,9,-7,14,14.0,18,18.0,39,39.0
+f4,separate,14,-7,9,9.0,12,12.0,39,39.0
+mixed,shared,2,-3,11,5.5,12,6.0,18,9.0
+mixed,separate,4,-3,9,9.0,12,6.0,18,9.0

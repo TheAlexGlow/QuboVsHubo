@@ -1,0 +1,51 @@
+{
+  "copy_unfoldings": 6,
+  "graph_unfoldings": {
+    "square": 24,
+    "tree": 90,
+    "triangle": 16
+  },
+  "mixed_pointwise_assignments": 2048,
+  "original_objectives": {
+    "f1": {
+      "argmins": 1,
+      "minimum": -5,
+      "points": 64
+    },
+    "f2": {
+      "argmins": 1,
+      "minimum": -4,
+      "points": 16
+    },
+    "f3": {
+      "argmins": 1,
+      "minimum": -4,
+      "points": 64
+    },
+    "f4": {
+      "argmins": 1,
+      "minimum": -7,
+      "points": 128
+    }
+  },
+  "rebuilt_file_sha256": {
+    "coordinate_ranks.pdf": "d328ef96a8ad15bf382513f885fedbfa8a901225e0afc57ce2d3fc31e18fd325",
+    "coordinate_ranks.svg": "bad99efba93d15bbfa7da966243314124be2b0a29488bf8ce61e8417a8876f57",
+    "coordinate_table.csv": "79f873b6d52246d36e9387ac7db25dbdcfe841c60ca1af16dcdfe4221d0db7cf",
+    "gibbs_bounds.pdf": "902cb714f9f7513d6cc14863d7fc553463998ef4832bb0bc7c697495e6c5b974",
+    "gibbs_bounds.svg": "4ef9a5962f0b72e48f776a55c7b6e25f56e31e9d6f2a554c3fc22a51b1eab4bb",
+    "gibbs_table.csv": "817f58b85805a55584906725e4ab013b29af5aaec5a96ddce99c3f576c182dfb",
+    "penalty_table.csv": "2ca4e3a7b70f569fdfd188d0d58e56e1b3c693e54c46f251847c2bbadc49e98a"
+  },
+  "status": "passed",
+  "tv_as_exact_fractions": {
+    "ordinary_m2": "63391357/941091755",
+    "sharpness": {
+      "0": "0",
+      "1": "22/245",
+      "2": "42/295",
+      "4": "162/875",
+      "8": "43554/218795"
+    }
+  }
+}
