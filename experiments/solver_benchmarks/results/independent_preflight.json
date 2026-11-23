@@ -1,0 +1,161 @@
+{
+  "b2_controls_sha256": "d1ee0f972900ed082bc902cc5fbe0ae0e7832184730f4b1111ca74bc1bf585d2",
+  "b2_to_production": {
+    "mixed_directional_and_local_energies": 256,
+    "mixed_original_values": 32,
+    "triangle_xor_values": 8
+  },
+  "production": {
+    "coupled_mixed": {
+      "directional": {
+        "assignments": 2097152,
+        "checked_native_decodes": 354,
+        "exact_fibers": 32768,
+        "exhaustive": true
+      },
+      "local": {
+        "assignments": 2097152,
+        "checked_native_decodes": 354,
+        "exact_fibers": 32768,
+        "exhaustive": true
+      },
+      "original": {
+        "assignments": 32768,
+        "checked_native_decodes": 32768,
+        "exact_fibers": 0,
+        "exhaustive": true
+      }
+    },
+    "f4": {
+      "directional": {
+        "assignments": 65536,
+        "checked_native_decodes": 65536,
+        "exact_fibers": 128,
+        "exhaustive": true
+      },
+      "local": {
+        "assignments": 65536,
+        "checked_native_decodes": 65536,
+        "exact_fibers": 128,
+        "exhaustive": true
+      },
+      "original": {
+        "assignments": 128,
+        "checked_native_decodes": 128,
+        "exact_fibers": 0,
+        "exhaustive": true
+      }
+    },
+    "g05_60.0": {
+      "quadratic": {
+        "assignments": 130,
+        "checked_native_decodes": 130,
+        "exact_fibers": 0,
+        "exhaustive": false
+      },
+      "xor": {
+        "assignments": 130,
+        "checked_native_decodes": 130,
+        "exact_fibers": 0,
+        "exhaustive": false
+      }
+    },
+    "g05_60.1": {
+      "quadratic": {
+        "assignments": 130,
+        "checked_native_decodes": 130,
+        "exact_fibers": 0,
+        "exhaustive": false
+      },
+      "xor": {
+        "assignments": 130,
+        "checked_native_decodes": 130,
+        "exact_fibers": 0,
+        "exhaustive": false
+      }
+    },
+    "mixed": {
+      "directional": {
+        "assignments": 128,
+        "checked_native_decodes": 128,
+        "exact_fibers": 32,
+        "exhaustive": true
+      },
+      "local": {
+        "assignments": 128,
+        "checked_native_decodes": 128,
+        "exact_fibers": 32,
+        "exhaustive": true
+      },
+      "original": {
+        "assignments": 32,
+        "checked_native_decodes": 32,
+        "exact_fibers": 0,
+        "exhaustive": true
+      }
+    },
+    "tree": {
+      "quadratic": {
+        "assignments": 64,
+        "checked_native_decodes": 64,
+        "exact_fibers": 0,
+        "exhaustive": true
+      },
+      "xor": {
+        "assignments": 64,
+        "checked_native_decodes": 64,
+        "exact_fibers": 0,
+        "exhaustive": true
+      }
+    },
+    "triangle": {
+      "quadratic": {
+        "assignments": 8,
+        "checked_native_decodes": 8,
+        "exact_fibers": 0,
+        "exhaustive": true
+      },
+      "xor": {
+        "assignments": 8,
+        "checked_native_decodes": 8,
+        "exact_fibers": 0,
+        "exhaustive": true
+      }
+    }
+  },
+  "shared_controls": {
+    "invalid_substitution": {
+      "cut_max": 3,
+      "pointwise_mismatches": 5,
+      "surrogate_max": 2
+    },
+    "shared_mixed": {
+      "directional": {
+        "max_abs": 11,
+        "min_abs": 2,
+        "states": 128
+      },
+      "global": {
+        "max_abs": 18,
+        "min_abs": 2,
+        "states": 128
+      },
+      "local": {
+        "max_abs": 12,
+        "min_abs": 2,
+        "states": 128
+      }
+    },
+    "triangle_scores": [
+      0,
+      4,
+      4,
+      0,
+      5,
+      3,
+      3,
+      5
+    ]
+  },
+  "status": "passed"
+}

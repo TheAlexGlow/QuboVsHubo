@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "index_origin": 0,
+  "assignment_order": "lexicographic, first variable most significant",
+  "triangle": {
+    "n": 3, "edges": [[0,1,2],[0,2,3],[1,2,1]], "u": 0, "v": 1,
+    "xor_scores": [0,4,4,0,5,3,3,5], "maximum": 5
+  },
+  "mixed": {
+    "n": 5, "terms": [[2,[0,1,2,3]],[-3,[0,1,2,4]]],
+    "shared_gates": [[0,1],[5,2]], "separate_gates": [[0,1],[5,2],[0,1],[7,2]],
+    "P": [2,2], "N": [3,3], "delta": 1,
+    "directional": {"A":[3,3],"B":[4,4],"min_abs":2,"max_abs":11},
+    "local": {"A":[4,4],"B":[4,4],"min_abs":2,"max_abs":12},
+    "global": {"A":[6,6],"B":[6,6],"min_abs":2,"max_abs":18}
+  },
+  "star_regression": {
+    "n": 4,"edges":[[0,1,1],[0,2,1],[0,3,1]],"center":0,"cut_max":3,"invalid_surrogate_max":2
+  }
+}

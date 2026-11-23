@@ -1,0 +1,22 @@
+{
+  "profile": "pilot",
+  "case": "cycle60",
+  "seed": 17,
+  "budget": 4096,
+  "results": {
+    "PROTES": {
+      "seconds": 1.009928542,
+      "n_evals": 4096,
+      "n_batches": 64,
+      "last_batch": 64,
+      "proposed_last_batch": 64
+    },
+    "TTOpt": {
+      "seconds": 0.016733458000000034,
+      "n_evals": 4096,
+      "n_batches": 135,
+      "last_batch": 24,
+      "proposed_last_batch": 32
+    }
+  }
+}

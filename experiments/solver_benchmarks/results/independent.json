@@ -1,0 +1,25 @@
+{
+  "batch_counts_reconciled": 272,
+  "candidate_checks": [
+    "decoded bits",
+    "original score",
+    "feasibility",
+    "minimization loss"
+  ],
+  "decoded_evaluations_rescored": 1114112,
+  "natural_score_medians_reproduced": 34,
+  "penalty_precision": {
+    "cases": 48,
+    "fibers_per_case": 32,
+    "pointwise_failures": 38,
+    "states_per_case": 128
+  },
+  "records": 272,
+  "status": "passed",
+  "successful_equal_budget_runs": 272,
+  "trajectory_checks": [
+    "strict improvements",
+    "evaluation coordinates",
+    "terminal decoded best"
+  ]
+}
