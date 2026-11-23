@@ -16,7 +16,7 @@ The input manifest is `inputs/models.json`. It records the natural optimum, vert
 
 The public Biq Mac Library provides the individual benchmark files. The source graph format starts with vertex and edge counts on the first line, followed by one undirected edge (one-based endpoints and weight) on each subsequent line. Both graphs have 885 distinct edges of weight one. A. Wiegele, *Biq Mac Library – A collection of Max-Cut and quadratic 0-1 programming instances of medium size*, Table 6, p. 9, gives the two optimal cut values. [Format and family](https://biqmac.aau.at/biqmaclib.html) · [Optimal values](https://biqmac.aau.at/biqmaclib.pdf)
 
-The repository stores the download URLs and SHA-256 digests. Download and verify the original bytes with the command below. Set `QUBO_GRAPH_DIR` to use the same directory in subsequent runs; the default location is the user's cache under qubo-vs-hubo/biqmac. Existing correctly hashed files work offline. Upstream's catalogue provides the files for testing and does not identify a separate redistribution license.
+The repository stores the download URLs and SHA-256 digests. The command below checks the original byte digest. It also accepts a whitespace-only variant if its ordered rows match the independently verified canonical digest. Canonicalization removes empty lines, joins the three fields on each line with single spaces, and uses LF line endings. Set `QUBO_GRAPH_DIR` to use the same directory in subsequent runs. The default location is the user's cache under qubo-vs-hubo/biqmac. Existing verified files work offline. Upstream's catalogue provides the files for testing and does not identify a separate redistribution license.
 
 ```sh
 export QUBO_GRAPH_DIR=/tmp/qubo-b3-public-graphs

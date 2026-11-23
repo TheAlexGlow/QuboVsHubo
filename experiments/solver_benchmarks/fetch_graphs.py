@@ -1,4 +1,4 @@
-"""Download the two original Biq Mac instances and validate the publisher's bytes."""
+"""Download the two Biq Mac instances and verify the recorded edge data."""
 import argparse
 import hashlib
 import json
@@ -21,7 +21,7 @@ def cache_dir(directory=None):
 
 
 def fetch_graph(case, directory=None):
-    """Return verified bytes. A cache entry with unexpected contents is an error."""
+    """Verify original bytes or the same edge rows with normalized whitespace."""
     spec = SPECS[case]
     path = cache_dir(directory) / case
     if path.is_file():
@@ -31,7 +31,10 @@ def fetch_graph(case, directory=None):
             data = stream.read()
     digest = hashlib.sha256(data).hexdigest()
     if digest != spec["sha256"]:
-        raise ValueError(f"{case}: expected {spec['sha256']}, observed {digest}")
+        lines = [" ".join(line.split()) for line in data.decode("ascii").splitlines() if line.strip()]
+        canonical = ("\n".join(lines) + "\n").encode("ascii")
+        if hashlib.sha256(canonical).hexdigest() != spec["canonical_sha256"]:
+            raise ValueError(f"{case}: failed original and canonical SHA-256 checks (raw {digest})")
     if not path.is_file():
         path.parent.mkdir(parents=True,exist_ok=True)
         with tempfile.NamedTemporaryFile(dir=path.parent,delete=False) as f:
@@ -51,4 +54,4 @@ if __name__ == "__main__":
     for case,spec in SPECS.items():
         if "source" in spec:
             data = fetch_graph(case,args.graph_dir)
-            print(f"{case} {len(data)} bytes {spec['sha256']}")
+            print(f"{case} {len(data)} bytes SHA-256 {hashlib.sha256(data).hexdigest()} (verified)")
