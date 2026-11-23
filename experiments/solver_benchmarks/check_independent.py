@@ -495,7 +495,8 @@ def main():
         target = args.results/"independent_preflight.json"
     else:
         report = check_records(args.results, args.graphs)
-        report["penalty_precision"] = precision(args.results/"precision.csv")
+        precision_output = args.output.with_suffix(".precision.csv") if args.output else args.results / "precision.csv"
+        report["penalty_precision"] = precision(precision_output)
         target = args.results/"independent.json"
     write_report(args.output or target,report)
 
